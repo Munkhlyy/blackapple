@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinecone</title>
+  </head>
+
+  <style>
+    .box2 {
+      width: 420px;
+      height: 600px;
+      background-color: rgb(0, 113, 128);
+      border-radius: 50px;
+      position: absolute;
+      top: 1280px;
+      left: 1680px;
+    }
+    .box {
+      width: 420px;
+      height: 600px;
+      background-color: rgb(0, 113, 128);
+      border-radius: 50px;
+      position: absolute;
+      top: 1280px;
+      left: 690px;
+    }
+    .box3 {
+      width: 100px;
+      height: 22px;
+      font-size: 23px;
+      position: absolute;
+      font-weight: 600px;
+      top: 30px;
+      left: 40%;
+      background-color: transparent;
+      border: none;
+      color: white;
+    }
+    .img1 {
+      position: absolute;
+      left: 70px;
+      width: 80px;
+      height: 25px;
+      top: 30px;
+      gap: 336px;
+    }
+    .box5 {
+      width: 100px;
+      height: 22px;
+      font-size: 23px;
+      position: absolute;
+      top: 30px;
+      left: 45%;
+      background-color: transparent;
+      border: none;
+      color: white;
+    }
+    .box6 {
+      width: 100px;
+      height: 22px;
+      font-size: 23px;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      background-color: transparent;
+      border: none;
+      color: white;
+    }
+    .img2 {
+      width: 11.67;
+      height: 15px;
+      top: 34px;
+      left: 58%;
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 23px;
+    }
+    .box8 {
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      font-size: 23px;
+      position: absolute;
+      right: 5%;
+      top: 34px;
+      border: none;
+    }
+    .box9 {
+      width: 618px;
+
+      height: 80px;
+      font-weight: 400;
+      font-size: 80px;
+      top: 169px;
+      left: 40%;
+      position: absolute;
+      color: white;
+      opacity: 50%;
+    }
+    .box10 {
+      width: 618px;
+      height: 250px;
+      top: 249px;
+      left: 29%;
+      position: absolute;
+      font-size: 250px;
+      color: white;
+    }
+    .box11 {
+      top: 520px;
+      left: 48%;
+      position: absolute;
+      font-size: 64px;
+      color: white;
+      width: 144px;
+      height: 64px;
+    }
+    .img3 {
+      margin: 0px;
+      width: 100%;
+      display: block;
+    }
+    .box12 {
+      width: 420px;
+      height: 600px;
+      background-color: green;
+      border-radius: 50px;
+      position: absolute;
+      top: 1300px;
+      left: 200px;
+    }
+    .box13 {
+      width: 420px;
+      height: 600px;
+      background-color: rgb(0, 113, 128);
+      border-radius: 50px;
+      position: absolute;
+      top: 1280px;
+      left: 180px;
+    }
+    .img4 {
+      width: 420px;
+      height: 600px;
+      position: absolute;
+      border-radius: 50px;
+      top: 1290px;
+      left: 190px;
+    }
+    .box14 {
+      width: 232px;
+      height: 88px;
+      position: absolute;
+      left: 258px;
+      top: 1480px;
+      color: white;
+      font-style: oblique;
+      font-size: 40px;
+    }
+    .box15 {
+      width: 420px;
+      height: 600px;
+      background-color: green;
+      border-radius: 50px;
+      position: absolute;
+      top: 1300px;
+      left: 1700px;
+    }
+    .box16 {
+      width: 420px;
+      height: 600px;
+      background-color: green;
+      border-radius: 50px;
+      position: absolute;
+      top: 1300px;
+      left: 700px;
+    }
+    .box17 {
+      width: 420px;
+      height: 600px;
+      border-radius: 50px;
+      position: absolute;
+      top: 1290px;
+      left: 1690px;
+    }
+    .img5 {
+      width: 420px;
+      height: 600px;
+      border-radius: 50px;
+      position: absolute;
+      top: 1290px;
+      left: 692px;
+    }
+    .box18 {
+      width: 232px;
+      height: 88px;
+      position: absolute;
+      left: 1700px;
+      top: 1500px;
+      font-size: 37px;
+      color: white;
+      font-style: oblique;
+      font-variant-position: initial;
+    }
+    .box19 {
+      width: 420px;
+      height: 600px;
+      background-color: rgb(0, 113, 128);
+      border-radius: 50px;
+      position: absolute;
+      top: 1280px;
+      left: 1190px;
+    }
+    .box20 {
+      width: 420px;
+      height: 600px;
+      background-color: green;
+      border-radius: 50px;
+      position: absolute;
+      top: 1300px;
+      left: 1200px;
+    }
+    .img6 {
+      width: 420px;
+      height: 600px;
+      background-color: green;
+      border-radius: 50px;
+      position: absolute;
+      top: 1290px;
+      left: 1195px;
+    }
+    .box21 {
+      width: 232px;
+      height: 88px;
+      position: absolute;
+      left: 800px;
+      top: 1500px;
+      font-size: 37px;
+      color: white;
+      font-style: oblique;
+      font-variant-position: initial;
+    }
+    .box22 {
+      width: 232px;
+      height: 88px;
+      position: absolute;
+      left: 1300px;
+      top: 1500px;
+      font-size: 37px;
+      color: white;
+      font-style: oblique;
+      font-variant-position: initial;
+    }
+    .box23 {
+      width: 643px;
+      height: 142px;
+      border-radius: 120px;
+      position: absolute;
+      background-color: bisque;
+      top: 2440px;
+      left: 160px;
+    }
+    .box24 {
+      margin-left: 50px;
+      margin-top: 45px;
+      font-size: 24px;
+    }
+    .box25 {
+      margin-left: 70px;
+      margin-top: -10px;
+      font-size: 20px;
+    }
+    .box26 {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 2528px;
+      left: 200px;
+    }
+    .box27 {
+      width: 643px;
+      height: 142px;
+      border-radius: 120px;
+      position: absolute;
+      background-color: rgb(175, 213, 183);
+      top: 2640px;
+      left: 160px;
+    }
+    .box28 {
+      margin-left: 50px;
+      margin-top: 45px;
+      font-size: 24px;
+    }
+    .img7 {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 2728px;
+      left: 200px;
+    }
+    .box29 {
+      width: 643px;
+      height: 142px;
+      border-radius: 120px;
+      position: absolute;
+      background-color: rgb(150, 240, 168);
+      top: 2840px;
+      left: 160px;
+    }
+    .box30 {
+      margin-left: 50px;
+      margin-top: 45px;
+      font-size: 24px;
+    }
+    .box31 {
+      margin-left: 70px;
+      margin-top: -10px;
+      font-size: 24px;
+    }
+    .img8 {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 2928px;
+      left: 200px;
+    }
+    .box32 {
+      width: 643px;
+      height: 142px;
+      border-radius: 120px;
+      position: absolute;
+      background-color: rgb(133, 188, 211);
+      top: 3040px;
+      left: 160px;
+    }
+    .box33 {
+      margin-left: 50px;
+      margin-top: 45px;
+      font-size: 24px;
+    }
+    .box34 {
+      margin-left: 70px;
+      margin-top: -10px;
+      font-size: 24px;
+    }
+    .img9 {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 3128px;
+      left: 200px;
+    }
+    .box35 {
+      width: 643px;
+      height: 142px;
+      border-radius: 120px;
+      position: absolute;
+      background-color: rgb(114, 209, 250);
+      top: 3240px;
+      left: 160px;
+    }
+    .box36 {
+      margin-left: 50px;
+      margin-top: 45px;
+      font-size: 24px;
+    }
+    .img10 {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 3328px;
+      left: 200px;
+    }
+    .box37 {
+      font-size: 50px;
+      position: absolute;
+      left: 35%;
+      top: 2000px;
+    }
+    .box38 {
+      font-size: 30px;
+      position: absolute;
+      left: 45%;
+      top: 2100px;
+      opacity: 50%;
+    }
+    .box39 {
+      width: 52px;
+      height: 48px;
+      border-radius: 100%;
+      position: absolute;
+      top: 2490px;
+      left: 700px;
+      color: white;
+      border: none;
+    }
+    .box40 {
+      width: 52px;
+      height: 48px;
+      border-radius: 100%;
+      position: absolute;
+      top: 2690px;
+      left: 700px;
+      color: white;
+      border: none;
+    }
+    .box41 {
+      width: 52px;
+      height: 48px;
+      border-radius: 100%;
+      position: absolute;
+      top: 2890px;
+      left: 700px;
+      color: white;
+      border: none;
+    }
+    .box42 {
+      width: 52px;
+      height: 48px;
+      border-radius: 100%;
+      position: absolute;
+      top: 3090px;
+      left: 700px;
+      color: white;
+      border: none;
+    }
+    .box43 {
+      width: 52px;
+      height: 48px;
+      border-radius: 100%;
+      position: absolute;
+      top: 3290px;
+      left: 700px;
+      color: white;
+      border: none;
+    }
+    .box44 {
+      /* width: 35px; */
+      height: 16px;
+      font-size: 14px;
+      position: absolute;
+      border: none;
+      left: 708px;
+      top: 2505px;
+    }
+    .box45 {
+      /* width: 35px; */
+      height: 16px;
+      font-size: 14px;
+      position: absolute;
+      border: none;
+      left: 708px;
+      top: 2705px;
+    }
+    .box46 {
+      /* width: 35px; */
+      height: 16px;
+      font-size: 14px;
+      position: absolute;
+      border: none;
+      left: 708px;
+      top: 2905px;
+    }
+    .box47 {
+      /* width: 35px; */
+      height: 16px;
+      font-size: 14px;
+      position: absolute;
+      border: none;
+      left: 708px;
+      top: 3105px;
+    }
+    .box48 {
+      /* width: 35px; */
+      height: 16px;
+      font-size: 14px;
+      position: absolute;
+      border: none;
+      left: 708px;
+      top: 3305px;
+    }
+    .img11 {
+      width: 100vw;
+    }
+    .box49 {
+      width: 484px;
+      height: 627px;
+      background-color: white;
+      border-radius: 40px;
+      top: 4400px;
+      left: 300px;
+      position: absolute;
+    }
+    .box50 {
+      width: 300px;
+      height: 22px;
+      top: 15px;
+      right: 90px;
+      font-size: 25px;
+      position: absolute;
+    }
+    .box51 {
+      width: 400px;
+      height: 49px;
+      font-size: 70px;
+      top: 60px;
+      left: 40px;
+      position: absolute;
+    }
+    .box52 {
+      width: 336px;
+      height: 19px;
+      font-size: 20px;
+      position: absolute;
+      opacity: 50%;
+      top: 200px;
+      left: 40px;
+    }
+    .box53 {
+      width: 336px;
+      height: 19px;
+      font-size: 20px;
+      position: absolute;
+      opacity: 50%;
+      top: 244px;
+      left: 70px;
+    }
+    .img12 {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      border: none;
+      position: absolute;
+      top: 38px;
+      left: 35px;
+    }
+    .img13 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 320px;
+      left: 40px;
+    }
+    .img14 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 370px;
+      left: 40px;
+    }
+    .img15 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 420px;
+      left: 40px;
+    }
+    .img16 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 470px;
+      left: 40px;
+    }
+    .box54 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 298px;
+      left: 70px;
+    }
+    .box55 {
+      width: 336px;
+      height: 34px;
+      position: absolute;
+      font-size: 17px;
+      top: 348px;
+      left: 70px;
+    }
+    .box56 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 398px;
+      left: 70px;
+    }
+    .box57 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 448px;
+      left: 70px;
+    }
+    .box58 {
+      width: 336px;
+      height: 48px;
+      background-color: rgb(168, 230, 230);
+      left: 75px;
+      top: 530px;
+      position: absolute;
+      border-radius: 40px;
+    }
+    .box59 {
+      width: 157px;
+      height: 48px;
+      position: absolute;
+      color: black;
+      top: -10px;
+      left: 100px;
+      font-size: 20px;
+    }
+    .box60 {
+      width: 484px;
+      height: 627px;
+      background-color: white;
+      border-radius: 40px;
+      top: 4400px;
+      left: 900px;
+      position: absolute;
+    }
+    .img17 {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      border: none;
+      position: absolute;
+      top: 38px;
+      left: 35px;
+    }
+    .box61 {
+      width: 336px;
+      height: 19px;
+      font-size: 20px;
+      position: absolute;
+      opacity: 50%;
+      top: 244px;
+      left: 70px;
+    }
+    .box62 {
+      width: 300px;
+      height: 22px;
+      top: 15px;
+      right: 90px;
+      font-size: 25px;
+      position: absolute;
+    }
+    .box63 {
+      width: 400px;
+      height: 49px;
+      font-size: 70px;
+      top: 60px;
+      left: 40px;
+      position: absolute;
+    }
+    .box64 {
+      width: 336px;
+      height: 19px;
+      font-size: 20px;
+      position: absolute;
+      opacity: 50%;
+      top: 200px;
+      left: 40px;
+    }
+    .img18 {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      border: none;
+      position: absolute;
+      top: 38px;
+      left: 35px;
+    }
+    .img19 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 320px;
+      left: 40px;
+    }
+    .img20 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 370px;
+      left: 40px;
+    }
+    .img21 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 420px;
+      left: 40px;
+    }
+    .img22 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 470px;
+      left: 40px;
+    }
+    .box65 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 298px;
+      left: 70px;
+    }
+    .box66 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 348px;
+      left: 70px;
+    }
+    .box67 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 398px;
+      left: 70px;
+    }
+    .box68 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 448px;
+      left: 70px;
+    }
+    .box69 {
+      width: 336px;
+      height: 48px;
+      background-color: rgb(168, 230, 230);
+      left: 75px;
+      top: 530px;
+      position: absolute;
+      border-radius: 40px;
+    }
+    .box70 {
+      width: 157px;
+      height: 48px;
+      position: absolute;
+      color: black;
+      top: -10px;
+      left: 100px;
+      font-size: 20px;
+    }
+    .box71 {
+      width: 484px;
+      height: 627px;
+      background-color: white;
+      border-radius: 40px;
+      top: 4400px;
+      left: 1500px;
+      position: absolute;
+    }
+    .box72 {
+      width: 300px;
+      height: 22px;
+      top: 15px;
+      right: 90px;
+      font-size: 25px;
+      position: absolute;
+    }
+    .box73 {
+      width: 400px;
+      height: 49px;
+      font-size: 70px;
+      top: 60px;
+      left: 40px;
+      position: absolute;
+    }
+    .box74 {
+      width: 336px;
+      height: 19px;
+      font-size: 20px;
+      position: absolute;
+      opacity: 50%;
+      top: 200px;
+      left: 40px;
+    }
+    .box75 {
+      width: 336px;
+      height: 19px;
+      font-size: 20px;
+      position: absolute;
+      opacity: 50%;
+      top: 244px;
+      left: 70px;
+    }
+    .img23 {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      border: none;
+      position: absolute;
+      top: 38px;
+      left: 35px;
+    }
+    .img24 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 320px;
+      left: 40px;
+    }
+    .img25 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 370px;
+      left: 40px;
+    }
+    .img26 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 420px;
+      left: 40px;
+    }
+    .img27 {
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 470px;
+      left: 40px;
+    }
+    .box76 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 298px;
+      left: 70px;
+    }
+    .box77 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 348px;
+      left: 70px;
+    }
+    .box78 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 398px;
+      left: 70px;
+    }
+    .box79 {
+      width: 336px;
+      height: 20px;
+      position: absolute;
+      font-size: 17px;
+      top: 448px;
+      left: 70px;
+    }
+    .box80 {
+      width: 336px;
+      height: 48px;
+      background-color: rgb(168, 230, 230);
+      left: 75px;
+      top: 530px;
+      position: absolute;
+      border-radius: 40px;
+    }
+    .box81 {
+      width: 157px;
+      height: 48px;
+      position: absolute;
+      color: black;
+      top: -10px;
+      left: 100px;
+      font-size: 20px;
+    }
+    .box82 {
+      width: 1140px;
+      height: 100px;
+      font-size: 70px;
+      position: absolute;
+      color: black;
+      top: 3800px;
+      left: 780px;
+      font-style: semi-bold;
+    }
+    .box83 {
+      width: 1140px;
+      height: 100px;
+      font-size: 30px;
+      position: absolute;
+      color: black;
+      top: 3900px;
+      left: 850px;
+      font-style: semi-bold;
+      opacity: 50%;
+    }
+    .box84 {
+      width: 167px;
+      height: 44px;
+      border-radius: 40px;
+      position: absolute;
+      background-color: white;
+      bottom: -4100px;
+      left: 80px;
+    }
+    .box85 {
+      width: 100px;
+      height: 30px;
+      top: -15px;
+      left: 50px;
+      color: rgb(10, 88, 197);
+      font-size: 23px;
+      position: absolute;
+    }
+    .img28 {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 6px;
+      left: 15px;
+    }
+    .box86 {
+      width: 167px;
+      height: 44px;
+      border-radius: 40px;
+      position: absolute;
+      background-color: white;
+      bottom: -4100px;
+      left: 280px;
+    }
+    .box87 {
+      width: 100px;
+      height: 30px;
+      top: -15px;
+      left: 50px;
+      color: rgb(10, 88, 197);
+      font-size: 23px;
+      position: absolute;
+    }
+    .img29 {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 6px;
+      left: 15px;
+    }
+  </style>
+
+  <body style="margin: 0px">
+    <img
+      style="width: 100%; display: block"
+      src="HeroImage.png"
+      alt="Hero image"
+    />
+    <img class="img1" src="logo 1.png" />
+    <button class="box3">Home</button>
+    <button class="box5">About</button>
+    <button class="box6">Contact</button>
+
+    <img class="img2" src="Vector.png" />
+    <div>
+      <button class="box8">EN</button>
+    </div>
+    <div class="box9">PURE MAGIC</div>
+    <div class="box10">AWAITS!</div>
+    <div class="box11">2024</div>
+    <img class="img3" src="Location image.png" />
+
+    <div class="box12"></div>
+    <div class="box13"></div>
+    <img class="img4" src="Hover card image.png" />
+    <div class="box14">TERKHIIN TSAGAAN LAKE</div>
+    <div class="box"></div>
+    <div class="box15"></div>
+
+    <div class="box16"></div>
+    <div class="box2"></div>
+    <img class="box17" src="Untitled.png" />
+    <img class="img5" src="Hover card image-2.png" />
+    <div class="box18">AMARBAYASGALANT MOASTERY</div>
+    <div class="box19"></div>
+    <div class="box20"></div>
+    <img
+      class="img6"
+      src="Hover card image-3.png"
+      alt="Hover card image-3.png"
+    />
+    <div class="box21">KHUVSGUL LAKE</div>
+    <div class="box22">KHORGIIN TOGOO</div>
+    <img
+      style="width: 100%; margin: 0px; display: block"
+      src="Roadmap image.png"
+    />
+    <div class="box23">
+      <p class="box24">SUKHBAATAR SQUARE</p>
+      <p class="box25">Ulaanbaatar</p>
+    </div>
+    <img class="box26" src="Icon Container 2.png" />
+
+    <div class="box27">
+      <p class="box28">AMARBAYASGALANT MONASTERY</p>
+      <p style="margin-left: 70px; margin-top: -10px; font-size: 20px">
+        Bulgan
+      </p>
+    </div>
+
+    <img class="img7" src="Icon Container 2.png" />
+    <div class="box29">
+      <p class="box30">KHORGIIN TOGOO</p>
+      <p class="box31">Arkhangai</p>
+    </div>
+    <img class="img8" src="Icon Container 2.png" />
+
+    <div class="box32">
+      <p class="box33">TERKHIIN TSAGAAN LAKE</p>
+      <p class="box34">Arkhangai</p>
+    </div>
+    <img class="img9" src="Icon Container 2.png" />
+    <div class="box35">
+      <p class="box36">KHUVSGUL</p>
+      <p style="margin-left: 70px; margin-top: -10px; font-size: 24px">
+        Khuvsgul
+      </p>
+    </div>
+    <img class="img10" src="Icon Container 2.png" />
+    <p class="box37">DESTINATION OF OUR AGENCY</p>
+    <p class="box38">pack your bags and get ready</p>
+    <button class="box39"></button>
+    <button class="box40"></button>
+    <button class="box41"></button>
+    <button class="box42"></button>
+    <button class="box43"></button>
+    <div class="box44">DAY 1</div>
+    <div class="box45">DAY 2</div>
+    <div class="box46">DAY 3</div>
+    <div class="box47">DAY 4</div>
+    <div class="box48">DAY 5</div>
+    <img class="img11" src="Price&Footer image.png" />
+    <div class="box49">
+      <p class="box50">Budget package</p>
+      <p class="box51">500$</p>
+      <p class="box52">Essentials covered</p>
+      <p class="box53">includes:</p>
+      <img class="img12" src="IconButton 1.png" />
+      <img class="img13" src="check.png" />
+      <img class="img14" src="check.png" />
+      <img class="img15" src="check.png" />
+      <img class="img16" src="check.png" />
+      <p class="box54">Group transportation(shared van/bus)</p>
+      <p class="box55">Standart accommodation (yurt or gusthouse)</p>
+      <p class="box56">Guided lake tour</p>
+      <p class="box57">1 meal per day</p>
+      <div class="box58">
+        <p class="box59">Select Package</p>
+      </div>
+    </div>
+    <div class="box60">
+      <img class="img17" src="IconButton 1.png" />
+      <p class="box61">includes:</p>
+      <p class="box62">Standart package</p>
+      <p class="box63">800$</p>
+      <p class="box64">Balanced adventure</p>
+      <img class="img18" src="IconButton 1.png" />
+      <img class="img19" src="check.png" />
+      <img class="img20" src="check.png" />
+      <img class="img21" src="check.png" />
+      <img class="img22" src="check.png" />
+      <p class="box65">Comfortable transportation(mini-bus)</p>
+      <p class="box66">Mid range accommodation (private yurt or lodge)</p>
+
+      <p class="box67">Guided lake tour + nearby hiking</p>
+
+      <p class="box68">2meals per day (breakkfast and dinner)</p>
+      <div class="box69">
+        <p class="box70">Select Package</p>
+      </div>
+    </div>
+    <div class="box71">
+      <p class="box72">Luxury package</p>
+      <p class="box73">1200$</p>
+      <p class="box74">Ultimate comfort</p>
+      <p class="box75">includes:</p>
+      <img class="img23" src="IconButton 1.png" />
+      <img class="img24" src="check.png" />
+      <img class="img25" src="check.png" />
+      <img class="img26" src="check.png" />
+      <img class="img27" src="check.png" />
+      <p class="box76">Private transportation (SUV)</p>
+      <p class="box77">Luxury accommodation (lakefront lodge)</p>
+      <p class="box78">Guided tours(lake + reindeer herder experience)</p>
+      <p class="box79">All meals included (local cousine)</p>
+      <div class="box80">
+        <p class="box81">Select Package</p>
+      </div>
+    </div>
+    <div class="box82">Pricing of Our Agency</div>
+    <div class="box83">Choose a Package That's Right For You</div>
+    <div class="box84">
+      <p class="box85">Facebook</p>
+      <img class="img28" src="Facebook Icon.png" />
+    </div>
+    <div class="box86">
+      <p class="box87">Instagram</p>
+      <img class="img29" src="Instagram Icon.png" />
+    </div>
+  </body>
+</html>
